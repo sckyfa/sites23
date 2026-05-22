@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10 Найкращих Страв на Вечерю</title>
+    <style>
+        /* Базові налаштування (Мінімалізм) */
+        :root {
+            --bg-color: #f9f9f9;
+            --text-color: #333333;
+            --card-bg: #ffffff;
+            --accent-color: #000000;
+            --secondary-text: #777777;
+        }
+
+        body {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            text-align: center;
+            padding: 60px 20px;
+            border-bottom: 1px solid #eaeaea;
+            background-color: var(--card-bg);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 300;
+            margin: 0;
+            letter-spacing: 1px;
+        }
+
+        p.subtitle {
+            color: var(--secondary-text);
+            margin-top: 10px;
+            font-size: 1.1rem;
+        }
+
+        /* Сітка для карток */
+        .container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+        }
+
+        /* Дизайн картки страви */
+        .card {
+            background-color: var(--card-bg);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+        }
+
+        .card img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 24px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card-title {
+            font-size: 1.4rem;
+            font-weight: 600;
+            margin: 0 0 10px 0;
+        }
+
+        .card-desc {
+            color: var(--secondary-text);
+            font-size: 0.95rem;
+            margin-bottom: 20px;
+            flex-grow: 1;
+        }
+
+        .card-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: auto;
+            padding-top: 15px;
+            border-top: 1px solid #eaeaea;
+        }
+
+        .rating {
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+
+        .rating span {
+            color: var(--secondary-text);
+            font-size: 0.9rem;
+            font-weight: normal;
+        }
+
+        .recipe-link {
+            text-decoration: none;
+            color: var(--card-bg);
+            background-color: var(--accent-color);
+            padding: 8px 16px;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: background-color 0.2s;
+        }
+
+        .recipe-link:hover {
+            background-color: #333333;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: var(--secondary-text);
+            font-size: 0.9rem;
+            border-top: 1px solid #eaeaea;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Світова Вечеря</h1>
+        <p class="subtitle">10 найкращих страв, які варто спробувати кожному</p>
+    </header>
+
+    <div class="container">
+        <div class="card">
+            <img src="c:\Users\Student\Documents\ст\зб\pitsa-marharyta_sitewebukr-img-1000x600.jpg" alt="Піца Маргарита">
+            <div class="card-content">
+                <h2 class="card-title">Піца Маргарита (Італія)</h2>
+                <p class="card-desc">Абсолютна класика. Тонке хрустке тісто, насичений томатний соус, ніжна моцарела та свіжі листочки базиліку. Простота, яка підкорила світ.</p>
+                <div class="card-footer">
+                    <div class="rating">9 <span>/ 10</span></div>
+                    <a href="https://klopotenko.com/yak-v-neapoli-italijska-picza-margaryta-vid-yevgena-klopotenka/" class="recipe-link" target="_blank">Рецепт</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="c:\Users\Student\Documents\ст\зб\istockphoto-2152180681-612x612.jpg" alt="Суші">
+            <div class="card-content">
+                <h2 class="card-title">Суші та Роли (Японія)</h2>
+                <p class="card-desc">Елегантна вечеря з ідеально звареного рису, свіжої риби, морепродуктів та водоростей норі. Подається з соєвим соусом, васабі та імбиром.</p>
+                <div class="card-footer">
+                    <div class="rating">10 <span>/ 10</span></div>
+                    <a href="https://klopotenko.com/z-lososem-ta-ogirkom-yak-zrobyty-roly-vdoma-za-reczeptom-yevgena-klopotenka/" class="recipe-link" target="_blank">Рецепт</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="c:\Users\Student\Documents\ст\зб\tako.jpg" alt="Тако">
+            <div class="card-content">
+                <h2 class="card-title">Тако (Мексика)</h2>
+                <p class="card-desc">Яскравий смак Мексики. М'які або хрусткі тортильї з начинкою із соковитого м'яса, пікантної сальси, гуакамоле, кінзи та лайма.</p>
+                <div class="card-footer">
+                    <div class="rating">9 <span>/ 10</span></div>
+                    <a href="https://klopotenko.com/gotujte-razom-z-ditmy-tako-z-kurkoyu-vid-yevgena-klopotenka/" class="recipe-link" target="_blank">Рецепт</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="c:\Users\Student\Documents\ст\зб\Pad-Tay.jpg" alt="Пад Тай">
+            <div class="card-content">
+                <h2 class="card-title">Пад Тай (Таїланд)</h2>
+                <p class="card-desc">Смажена рисова локшина з креветками або куркою, яйцем, паростками квасолі, арахісом та неймовірно збалансованим кисло-солодким тамариндовим соусом.</p>
+                <div class="card-footer">
+                    <div class="rating">9 <span>/ 10</span></div>
+                    <a href="https://wok2go.com.ua/uk/blog/recept-lokshini-pad-taj-z-kurkoju/" class="recipe-link" target="_blank">Рецепт</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="c:\Users\Student\Documents\ст\зб\ef4j9fpwoau0u33 (1).jpg" alt="Курка в масляному соусі">
+            <div class="card-content">
+                <h2 class="card-title">Butter Chicken (Індія)</h2>
+                <p class="card-desc">Шматочки ніжного курячого філе, мариновані в йогурті, подаються в густому, ароматному вершково-томатному соусі з традиційними індійськими спеціями.</p>
+                <div class="card-footer">
+                    <div class="rating">10 <span>/ 10</span></div>
+                    <a href="https://klopotenko.com/bater-chiken/" class="recipe-link" target="_blank">Рецепт</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="c:\Users\Student\Documents\ст\зб\images_1.jpg" alt="Паста Карбонара">
+            <div class="card-content">
+                <h2 class="card-title">Паста Карбонара (Італія)</h2>
+                <p class="card-desc">Справжня Карбонара готується без вершків: лише гаряча паста, хрустке гуанчіале (або панчета), жовтки, сир Пекоріно Романо та багато чорного перцю.</p>
+                <div class="card-footer">
+                    <div class="rating">10 <span>/ 10</span></div>
+                    <a href="https://klopotenko.com/spageti-karbonara-mij-domashnij-retsept/" class="recipe-link" target="_blank">Рецепт</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="c:\Users\Student\Documents\ст\зб\images-_1_.jpg" alt="Стейк">
+            <div class="card-content">
+                <h2 class="card-title">Стейк (Франція)</h2>
+                <p class="card-desc">Ідеально просмажений яловичий стейк (найчастіше рібай або стриплойн) у поєднанні з хрусткою, золотистою картоплею фрі та перцевим соусом.</p>
+                <div class="card-footer">
+                    <div class="rating">9 <span>/ 10</span></div>
+                    <a href="https://klopotenko.com/stejk-striplojn-abo-nyu-jork-vse-shho-potribno-znaty-pro-krashhyj-premialnyj-stejk/" class="recipe-link" target="_blank">Рецепт</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="c:\Users\Student\Documents\ст\зб\gid-po-supu-ramen.jpg" alt="Рамен">
+            <div class="card-content">
+                <h2 class="card-title">Рамен (Японія)</h2>
+                <p class="card-desc">Зігріваючий суп із наваристим м'ясним бульйоном, пружною пшеничною локшиною, скибочками свинини (тясю), зеленим цибулею та маринованим яйцем з рідким жовтком.</p>
+                <div class="card-footer">
+                    <div class="rating">10 <span>/ 10</span></div>
+                    <a href="https://klopotenko.com/trishky-yaponiyi-ramen-z-kurkoyu-vid-yevgena-klopotenka/" class="recipe-link" target="_blank">Рецепт</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="c:\Users\Student\Documents\ст\зб\Spanish_paella_in_large_pan.webp" alt="Паелья">
+            <div class="card-content">
+                <h2 class="card-title">Паелья (Іспанія)</h2>
+                <p class="card-desc">Святкова страва з Валенсії. Золотистий рис, забарвлений шафраном, готується на великій сковороді з морепродуктами, куркою, кроликом та свіжими овочами.</p>
+                <div class="card-footer">
+                    <div class="rating">8 <span>/ 10</span></div>
+                    <a href="https://klopotenko.com/stravy/paelya/" class="recipe-link" target="_blank">Рецепт</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="c:\Users\Student\Documents\ст\зб\images-_2_.jpg" alt="Мусака">
+            <div class="card-content">
+                <h2 class="card-title">Мусака (Греція)</h2>
+                <p class="card-desc">Ситна листкова запіканка. Скибочки смажених баклажанів та картоплі чергуються з пряним фаршем (яловичина або баранина) і заливаються густим соусом бешамель.</p>
+                <div class="card-footer">
+                    <div class="rating">8 <span>/ 10</span></div>
+                    <a href="https://klopotenko.com/musaka-ylublena-grecka-zapikanka/" class="recipe-link" target="_blank">Рецепт</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2026 Світова Вечеря. Усі права захищено.</p>
+    </footer>
+
+</body>
+</html>
